@@ -216,6 +216,7 @@ footer {
 
     .logo svg {
         padding-left: 16px;
+        padding-right: 16px;
     }
 
     .hero {
@@ -250,7 +251,7 @@ footer {
 
     .projects {
         grid-template-columns: 1fr;
-        
+
     }
 
     .project {
@@ -258,7 +259,7 @@ footer {
         text-align: center;
         align-items: center;
         gap: 16px;
-        
+
     }
 
     .project-title {
@@ -266,7 +267,13 @@ footer {
     }
 
     .about {
-        padding: 32px 81px;
+        padding: 32px 32px;
+        align-items: center;
+    }
+
+    .title {
+        flex-direction: column;
+        align-items: center;
     }
 
     .about h1 {
@@ -274,17 +281,16 @@ footer {
     }
 
     .about p {
-        padding-left: 16px;
+        padding-left: 0px;
         font-size: 16px;
+        text-align: center;
     }
 
-.contact {
-    font-size: 16px;
-}
+    .contact {
+        font-size: 16px;
+    }
 
     .email {
         font-size: 22px;
     }
 }
-
-
