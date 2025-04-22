@@ -165,6 +165,11 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
+.mobile-br {
+    display: inline;
+    /* 기본: 줄 안 바꿈 */
+}
+
 .contact {
     height: 60vh;
     padding-top: 99px;
@@ -284,6 +289,11 @@ footer {
         padding-left: 0px;
         font-size: 16px;
         text-align: center;
+    }
+
+    .mobile-br {
+        display: block;
+        /* 모바일에서는 줄바꿈처럼 보여줌 */
     }
 
     .contact {
