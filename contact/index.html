@@ -6,117 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TURE</title>
   <link rel="stylesheet" href="/style.css">
-  <link href="//cdn.jsdelivr.net/npm/suitcss-base@6.1.0/index.min.css" rel="stylesheet">
-  <link href="//cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
-  <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/suitcss-base@6.1.0/index.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+  <link href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
 
 </head>
 
 <body>
   <header>
-    <div class="logo">
-      <svg id="Layer_2" viewBox="0 0 951.65 256.6" xmlns="http://www.w3.org/2000/svg">
-        <g data-name="Layer_1" id="Layer_1-2">
-          <g>
-            <path class="cls-1" d="M74.39,55.28H0V0h213.09v55.28h-74.56v195.86h-64.15V55.28Z" />
-            <path class="cls-1"
-              d="M240.39,159.01V0h64.15v159.01c0,25.25,17.74,42.31,44.19,42.31s44.36-17.06,44.36-42.31V0h64.15v159.18c0,58.35-43.51,97.42-108.51,97.42s-108.34-39.07-108.34-97.59Z" />
-            <path class="cls-1"
-              d="M498.52,0h138.53c45.04,0,75.24,31.73,75.24,79.16,0,27.13-10.07,48.96-26.96,62.61,11.6,8.19,18.43,21.84,20.98,44.53l7.34,64.83h-62.61l-7.17-64.83c-2.05-16.72-8.87-28.15-22.01-28.15h-59.2v92.98h-64.15V0ZM627.33,107.14c13.14,0,22.01-11.26,22.01-27.98s-8.87-27.98-22.01-27.98h-64.66v55.96h64.66Z" />
-            <path class="cls-1"
-              d="M750,0h198.25v55.28h-134.1v44.36h118.06v51.87h-118.06v44.36h137.51v55.28h-201.66V0Z" />
+    <a href="../index.html" class="logo">
+      <div class="logo">
+        <svg id="Layer_2" viewBox="0 0 951.65 256.6" xmlns="http://www.w3.org/2000/svg">
+          <g data-name="Layer_1" id="Layer_1-2">
+            <g>
+              <path class="cls-1" d="M74.39,55.28H0V0h213.09v55.28h-74.56v195.86h-64.15V55.28Z" />
+              <path class="cls-1"
+                d="M240.39,159.01V0h64.15v159.01c0,25.25,17.74,42.31,44.19,42.31s44.36-17.06,44.36-42.31V0h64.15v159.18c0,58.35-43.51,97.42-108.51,97.42s-108.34-39.07-108.34-97.59Z" />
+              <path class="cls-1"
+                d="M498.52,0h138.53c45.04,0,75.24,31.73,75.24,79.16,0,27.13-10.07,48.96-26.96,62.61,11.6,8.19,18.43,21.84,20.98,44.53l7.34,64.83h-62.61l-7.17-64.83c-2.05-16.72-8.87-28.15-22.01-28.15h-59.2v92.98h-64.15V0ZM627.33,107.14c13.14,0,22.01-11.26,22.01-27.98s-8.87-27.98-22.01-27.98h-64.66v55.96h64.66Z" />
+              <path class="cls-1"
+                d="M750,0h198.25v55.28h-134.1v44.36h118.06v51.87h-118.06v44.36h137.51v55.28h-201.66V0Z" />
+            </g>
           </g>
-        </g>
-      </svg>
-    </div>
+        </svg>
+      </div>
+    </a>
 
     <nav>
       <a href="/about">about</a>
       <a href="/contact">contact</a>
     </nav>
-
   </header>
-  <section class="hero">
-    <div class="hero-content">
-      <iframe src="https://cloud.3dvista.com/hosting/6912114/14/index.htm" allowfullscreen></iframe>
 
-      <div class="hero-caption">
-        공군박물관 특별전 아카이브<br>
-        2020~2022<br>
-        (야외 항공기 전시장 제외)
-      </div>
-    </div>
+  <section class="contact">
+    <span class="email" id="email" onclick="copyEmail()" style="cursor: pointer;" >100postpone@gmail.com</span>
+    <script>
+      function copyEmail() {
+        const email = document.getElementById("email").textContent;
+        navigator.clipboard.writeText(email).then(() => {
+          const copied = document.getElementById("copied");
+          copied.style.display = "inline";
+          setTimeout(() => copied.style.display = "none", 1500);
+        });
+      }
+    </script>
+    <p>협업 및 제작 문의는 위 메일로 연락주세요.</p>
   </section>
-
-
-
-  <main>
-    <section class="projects">
-      <div class="project">
-        <div class="project-thumb">
-          <img class="project-img" src="thumb/Gochang_Dolmen.jpg" alt="고창고인돌유적지">
-        </div>
-        <div class="project-title">고창고인돌박물관<br>고창고인돌유적지</div>
-
-      </div>
-
-      <div class="project">
-        <a href="https://storage.net-fs.com/hosting/6912114/33/" target="_blank" class="project">
-          <div class="project-thumb">
-            <img class="project-img" src="thumb/Seoul_GirlsCommercialHighSchool.jpg" alt="서울여상드론뷰">
-          </div>
-          <div class="project-title">서울여자상업고등학교</div>
-        </a>
-      </div>
-
-      <div class="project">
-        <a href="https://cloud.3dvista.com/hosting/6912114/27/index.htm" target="_blank" class="project">
-          <div class="project-thumb">
-            <img class="project-img" src="thumb/Jeju_HangilMemorialHall.jpg" alt="제주항일기념관 드론뷰">
-          </div>
-          <div class="project-title">제주항일기념관</div>
-        </a>
-      </div>
-
-      <div class="project">
-        <div class="project-thumb">
-          <img class="project-img" src="thumb/WonjinPlasticSurgery.jpg" alt="원진성형외과파우더룸">
-        </div>
-        <div class="project-title">원진성형외과</div>
-
-      </div>
-
-      <div class="project">
-        <a href="https://100postpone.github.io/chouchoumond/" target="_blank" class="project">
-          <div class="project-thumb">
-            <img class="project-img" src="thumb/Chouchou-Monde.jpg" alt="슈슈몽드웨딩">
-          </div>
-          <div class="project-title">슈슈몽드웨딩</div>
-        </a>
-      </div>
-
-
-      <div class="project">
-        <a href="https://100postpone.github.io/UNfirst/" target="_blank" class="project">
-          <div class="project-thumb">
-            <img class="project-img" src="thumb/UNfirst.jpg" alt="UN군초전기념관맵">
-          </div>
-          <div class="project-title">UN군 초전기념관</div>
-        </a>
-      </div>
-
-    </section>
-
-    <section class="footer-caption">
-      본 프로젝트는 Gongyumi Studio 재직 당시, 촬영을 제외한 기획부터 3DVista 기반 구현 및 퍼블리싱까지 전 과정을 단독으로 수행한 작업입니다.<br>
-      개인 포트폴리오용 용도로 정리된 자료이며, 상업적 이용 목적이 아니며 최종 결과물에 대한 권리는 의뢰처 또는 Gongyumi Studio에 있음을 밝힙니다.
-    </section>
-
-
-  </main>
   <footer>
     <div>© 2025 TURE</div>
   </footer>
 </body>
 
 </html>
+
