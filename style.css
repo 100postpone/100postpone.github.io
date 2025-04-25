@@ -183,7 +183,23 @@ main {
 .email {
     font-family: 'SUIT', sans-serif;
     font-size: 34px;
+    white-space: nowrap;
 }
+
+#copied {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    z-index: 1000;
+    opacity: 0.9;
+  }
 
 
 .logo svg {

@@ -50,12 +50,13 @@
         const email = document.getElementById("email").textContent;
         navigator.clipboard.writeText(email).then(() => {
           const copied = document.getElementById("copied");
-          copied.style.display = "inline";
+          copied.style.display = "block";
           setTimeout(() => copied.style.display = "none", 1500);
         });
       }
     </script>
     <p>협업 및 제작 문의는 위 메일로 연락주세요.</p>
+    <div id="copied">복사되었습니다</div>
   </section>
   <footer>
     <div>© 2025 TURE</div>
